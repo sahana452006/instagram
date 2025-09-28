@@ -1,0 +1,247 @@
+.instagram-text-container{
+    position: relative;
+
+    padding-top: 22px;
+    padding-bottom: 20px;
+    padding-inline: 11px;
+    margin-bottom: 10px;
+}
+
+.instagram-image-container{
+    padding-top: 5px;
+    display: flex;
+    cursor: pointer;
+
+    transition: display 30ms;
+}
+
+.instagram-text{
+    width: 92px;    
+}
+
+.instagram-icon-container{
+    position: absolute;
+    justify-content: center;    
+    align-items: center;
+
+    display: flex;
+    width: 42px;
+    height: 42px;
+
+    border-radius: 6px;
+}
+
+.instagram-icon{
+    position: absolute;
+    width: 20px;
+    display: none;
+
+    transition: display 30ms;
+}
+
+.icon-container, .more-container, .threads-container{
+    background-color: white;
+    display: flex;
+    align-items: end;
+
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 12px;
+
+    margin-top: 6px;
+    margin-bottom: 8px;
+
+    transition: background-color 0.35s;
+    cursor: pointer;
+
+    border-radius: 6px;
+}
+
+.icon-container:hover, .more-container:hover, .threads-container:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.threads-container{
+    position: relative;
+}
+
+.threads-notif{
+    position: absolute;
+    background-color: rgb(255, 51, 51);
+
+    color: white;
+    padding: 2px 5.5px;
+    font-size: 9.5px;
+
+    border-radius: 12px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1.2px;
+    top: 5px;
+    left: 23px;
+
+    opacity: 1;
+}
+
+.sidebar-icon{
+    width: 20px;
+    margin-right: 15px;
+}
+
+.threads-icon{
+    width: 19px;
+    margin-right: 16px;
+}
+
+.explore-icon{
+    width: 22px;
+    margin-right: 14px;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: white;
+    width: 280px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+
+    padding: 10px;
+    z-index: 300;
+}
+
+@media screen and (min-width: 1133px) and (max-width: 1710px){
+    .sidebar{
+        width: 198px;
+    }
+}
+
+@media screen and (max-width: 1132px){
+    .sidebar{
+        width: 43px;
+    }
+    .transition-icons{
+        display: none;
+        cursor: default;
+    }
+    .instagram-image-container{
+        display: none;
+    }
+
+    .instagram-text-container{
+        margin-bottom: 40px;
+    }
+
+    .instagram-icon{
+        display: inline-block;
+    }
+
+    .icon-container, .more-container, .threads-container{
+        width: 42px;
+        padding-left: 0;
+        padding-right: 1px;
+        justify-content: center;
+    }
+
+    .sidebar-icon, .explore-icon, .threads-icon{
+        margin-right: 0;
+    }
+
+    .instagram-icon-container{
+        right: 0;
+        top: 12px;
+        cursor: pointer;
+    }
+
+    .instagram-icon-container:hover{
+        background-color: rgb(240, 240, 240);
+    }
+}
+
+@media screen and (max-height: 640px){
+    .threads-container{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 560px){
+    .sidebar-section2{
+        top: 488px;
+    }
+}
+
+.icon-prof-container{
+    display: flex;
+    align-items: center;
+
+    padding-top: 11.5px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    margin-top: 6px;
+
+    cursor: pointer;
+    transition: background-color 0.35s;
+
+    border-radius: 6px;
+}
+
+.icon-prof-container:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+
+.prof-pic-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px;
+
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+
+    margin-right: 13px;
+    margin-left: -3px;
+    margin-top: -3px;
+    
+}
+
+.profile-picture{
+    position: absolute;
+    display: flex;
+    width: 22.5px;
+    height: 21px;
+    border-radius: 12px;
+    top: 1px;
+}
+
+.sidebar-section1, .sidebar-section2{
+    position: absolute;
+    width: inherit;
+}
+
+
+.sidebar-section2{
+    bottom: 18px;
+    width: inherit;
+}
+
+.capital-letter{
+    font-family: Roboto, Arial;
+}
+
+.more-container{
+    align-items: center;
+}
+
+.transition-icons{
+    font-size: 15px;
+    color: black;
+}

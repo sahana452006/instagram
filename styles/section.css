@@ -1,0 +1,147 @@
+.photos{
+    margin-top: 24px;
+    width: 840px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+}
+
+.posts-saved-tagged{
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+}
+
+.posts-grid{
+    width: 90.5px;
+    height: 10.5px;
+    margin-right: 7px;
+}
+
+.private-info-container{
+    display: flex;
+    align-items: center;
+    padding-top: 17px;
+
+    cursor: pointer;
+}
+
+.posts-info-container{
+    display: flex;
+    align-items: start;
+    padding-top: 17px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 1);
+
+    cursor: pointer;
+    
+}
+
+.posts-info, .private-info{
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.posts-info{
+    color: black;
+}
+
+.private-info{
+    color: gray;
+}
+
+.camera-png{
+    width: 36px;
+    height: 36px;
+}
+
+.share-image-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 7.5px 8px;
+    border-radius: 28px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.share-image-container:hover{
+    .camera-tooltip{
+        display: block;
+    }
+}
+
+.share-photos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 69px 44px;
+}
+
+.share-photos-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Helvetica, Arial;
+}
+
+.share-photos-text{
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.share-photos-explanation{
+    font-family: Nimbus Sans;
+    font-size: 12.5px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.share-your-photos{
+    font-size: 12.5px;
+    font-family: Nimbus Sans, Arial;
+    color: rgb(8, 161, 212);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.share-your-photos:hover{
+    color: rgb(18, 16, 148);
+}
+
+.camera-tooltip{
+    position: absolute;
+    white-space: nowrap;
+    display: none;
+
+    bottom: -42px;
+    left: 24px;
+    color: white;
+    background-color: rgba(19, 19, 19, 0.8);
+    padding: 15px 12px;
+
+    font-size: 14.5px;
+    font-family: Roboto;
+
+    border: none;
+    border-radius: 5px;
+
+    transition: display 20ms;
+}
+
+@media screen and (max-width: 936px){
+    .photos{
+        width: calc(100vw*0.854);
+    }
+}

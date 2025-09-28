@@ -1,0 +1,50 @@
+.footer {
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 80px;
+}
+
+footer div{
+    display: flex;
+}
+
+.help{
+    font-family: Nimbus Sans;
+    font-size: 11px;
+    color: gray;
+    word-spacing: 10px;
+    margin-bottom: 15px;
+
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px; 
+
+
+    cursor: default;
+}
+
+.span-help{
+    word-spacing: normal;
+}
+
+.span-underline{
+    text-decoration: none;
+}
+
+.span-underline:hover, .span-help:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 830px){
+    .footer{
+        top: 730px;
+    }
+}
